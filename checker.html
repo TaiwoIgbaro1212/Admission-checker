@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission check</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="display" id="display"></div>
+    <div class="container">
+
+      <div class="title">
+        <h2>Admission Eligibility Checker</h2>
+      </div>
+
+      
+        <form action="" id="form" class="form">
+
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">First Name</span>
+              <input
+                type="text"
+                id="fname"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Last Name</span>
+              <input type="text" id="lname" placeholder="Enter your last name" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="email" id="mail" placeholder="Enter your email" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Date of Birth</span>
+              <input type="number" id="age" placeholder="Enter your age" required />
+            </div>
+            <div class="input-box">
+              <span class="details">State of Origin</span>
+              <input type="text" id="state" placeholder="Enter your State" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Number of Sitting</span>
+              <select id="sitting" class="form-select">
+                <option selected>Choose...</option>
+                <option>1</option>
+                 <option>2</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details">UTME Score</span>
+              <input type="number" id="jamb" placeholder="Jamb mark" required />
+            </div>
+            <div class="input-box">
+              <span class="details">PUTME Score</span>
+              <input type="number" id="postjamb" placeholder="Putme mark" required />
+            </div>
+            <div class="input-box">
+              <div>
+                <span class="details"> 0'level Result:</span>
+                <span>Kindly provide the your required subjects</span>
+              </div>
+              <div class="input-box">
+                <label for="olevel_english">OLevel English:</label>
+                <input
+                  type="text"
+                  name="olevel_english"
+                  id="cand-Eng"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <label for="olevel_maths">OLevel Maths:</label>
+                <input
+                  type="text"
+                  name="olevel_maths"
+                  id="cand-Maths"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <select 
+                  name="subject" 
+                  id="candSub1">
+                  <option>Subject</option>
+                  <option value="Geography">Geography</option>
+                  <option value="Chemistry">Chemistry</option>
+                  <option value="Economics">Economics</option>
+                  <option value="Accounting">Accounting</option>
+                  <option value="Government">Government</option>
+                  <option value="Literature in English">
+                    Literature in English
+                  </option>
+                  <option value="Biology">Biology</option>
+                  <option value="Commerce">Commerce</option>
+                </select>
+                <input type="text" name="olevel_subject1" id="cand-Subj1" />
+              </div>
+              <div class="input-box">
+                <select name="subject" id="candSub2">
+                  <option>Subject</option>
+                  <option value="Geography">Geography</option>
+                  <option value="Chemistry">Chemistry</option>
+                  <option value="Economics">Economics</option>
+                  <option value="Accounting">Accounting</option>
+                  <option value="Government">Government</option>
+                  <option value="Literature in English">
+                    Literature in English
+                  </option>
+                  <option value="Biology">Biology</option>
+                  <option value="Commerce">Commerce</option>
+                </select>
+                <input type="text" name="olevel_subject2" id="cand-Subj2" />
+              </div>
+              <div class="input-box">
+                <select name="subject" id="candSub3">
+                  <option>Subject</option>
+                  <option value="Geography">Geography</option>
+                  <option value="Chemistry">Chemistry</option>
+                  <option value="Economics">Economics</option>
+                  <option value="Accounting">Accounting</option>
+                  <option value="Government">Government</option>
+                  <option value="Literature in English">
+                    Literature in English
+                  </option>
+                  <option value="Biology">Biology</option>
+                  <option value="Commerce">Commerce</option>
+                </select>
+                <input type="text" name="olevel_subject2" id="cand-Subj3" />
+              </div>
+              <div class="input-box">
+                <span class="details">Gender</span>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose your gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <span class="details">Degree Applied For:</span>
+                <input type="text" placeholder="Course" required />
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="button">
+          <button type="button" id="result" onclick="finalMark()">Submit</button>
+        </div>
+      <div>
+        <p id="feedback"></p>
+        
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
